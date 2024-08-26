@@ -1,0 +1,98 @@
+
+HOW THE GAME WORKS
+
+    the game has a matrix of squares.
+    4 players.
+    each player starts in a corner.
+    each square can have a player on it.
+    there are walls between each of the squares.
+    in their turn, each player rolls a dice (1 - 4) that determines how many moves they can make.
+    in each move, a player can move to any of the available nearby squares. If the player hits a wall while moving, the turn ends and the player goes back to their corner.
+
+    a random objective square spawns. when one of the players gets to the obejctive square, they win a point, go back to their corner and a new objective square is selected.
+
+    first player to reach a certain amount of points wins.
+
+    the map should be random each time.
+
+    objective squares should not be too close to each of the starting corners.
+
+
+
+NEEDED STRUCTURES   
+
+
+    Location:
+        - x coordinate (unsigned short int)
+        - y coordinate (unsigned short int)
+
+     
+    Player structure:
+        - current location (Location)
+        - spawn location (Location)
+        - player color
+        - player number
+
+
+    Board structure:
+
+        
+        - board size (Location)
+
+        - two dimentional array for the horizontal walls (unsigned char**).
+
+            each item in the two dimentional array will hold:
+                0 = no wall
+                1 = wall
+                2 = border
+
+            for example, for a 5x5 board with no walls the horizontal array will be:
+
+                2   2   2   2   2
+                0   0   0   0   0
+                0   0   0   0   0
+                0   0   0   0   0
+                0   0   0   0   0
+                2   2   2   2   2
+
+
+        - two dimentaional array for the vertical walls (unsigned char**).
+
+            each item in the two dimentional array will hold:
+                0 = no wall
+                1 = wall
+                2 = border
+
+            for example, for a 5x5 board with no walls the vertical array will be:
+
+                2   0   0   0   0   2
+                2   0   0   0   0   2
+                2   0   0   0   0   2
+                2   0   0   0   0   2
+                2   0   0   0   0   2
+
+
+    Game strucutre:
+
+        - board (Board)
+        
+        - Player array (Player)
+
+        - player count (unsigned char)
+
+        - turn (unsigned short int)
+
+        - turns left (unsigned char)
+
+
+
+
+
+Needed Funcations:
+
+
+        
+
+
+
+
