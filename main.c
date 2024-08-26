@@ -2,4 +2,5 @@
 #include "game_structs.h"
 
 int main(){
+    printf("blabla");
 }
