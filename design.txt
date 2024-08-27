@@ -48,12 +48,12 @@ NEEDED STRUCTURES
 
             for example, for a 5x5 board with no walls the horizontal array will be:
 
-                2   2   2   2   2
+                1   1   1   1   1
                 0   0   0   0   0
                 0   0   0   0   0
                 0   0   0   0   0
                 0   0   0   0   0
-                2   2   2   2   2
+                1   1   1   1   1
 
 
         - two dimentaional array for the vertical walls (unsigned char**).
@@ -61,21 +61,20 @@ NEEDED STRUCTURES
             each item in the two dimentional array will hold:
                 0 = no wall
                 1 = wall
-                2 = border
 
             for example, for a 5x5 board with no walls the vertical array will be:
 
-                2   0   0   0   0   2
-                2   0   0   0   0   2
-                2   0   0   0   0   2
-                2   0   0   0   0   2
-                2   0   0   0   0   2
+                1   0   0   0   0   1
+                1   0   0   0   0   1
+                1   0   0   0   0   1
+                1   0   0   0   0   1
+                1   0   0   0   0   1
 
 
     Game strucutre:
 
         - board (Board)
-        
+
         - Player array (Player)
 
         - player count (unsigned char)
@@ -90,6 +89,14 @@ NEEDED STRUCTURES
 
 Needed Funcations:
 
+
+    init player
+    init board
+    init game
+    
+    roll dice
+    set target location
+    
 
         
 
